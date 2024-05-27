@@ -1,0 +1,139 @@
+<!-- 6.2. Update Individual Blog Post Layout
+We'll add content to post.html to reflect the selected blog topic and link structure.
+
+post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI: Innovations and Trends</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tech</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-md-8">
+                <h1 class="mt-4">The Future of AI: Innovations and Trends</h1>
+                <p class="lead">by <a href="#">John Doe</a></p>
+                <hr>
+                <p>Posted on January 1, 2024 at 12:00 PM</p>
+                <hr>
+                <img class="img-fluid rounded" src="https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739748.jpg?size=626&ext=jpg&ga=GA1.1.1262777057.1708075036&semt=ais_user_b" class="card-img-top" alt="Blog Post Image" alt="Blog Post Image">
+                <hr>
+                <p class="lead">Artificial Intelligence (AI) is rapidly advancing, bringing new innovations and trends that are set to transform various industries...</p>
+                <p>In this article, we'll explore the latest advancements in AI, including new technologies and applications that are shaping the future...</p>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Search Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Recent Posts Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="post.html">The Future of AI: Innovations and Trends</a></li>
+                            <li><a href="post.html">Blockchain Beyond Cryptocurrency</a></li>
+                            <li><a href="post.html">The Impact of 5G Technology</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tags Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Tags</div>
+                    <div class="card-body">
+                        <span class="badge badge-primary">Tech</span>
+                        <span class="badge badge-secondary">AI</span>
+                        <span class="badge badge-success">Blockchain</span>
+                        <span class="badge badge-danger">5G</span>
+                        <span class="badge badge-warning">Innovation</span>
+                        <span class="badge badge-info">Trends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-light mt-4">
+        <div class="container text-center">
+            <p class="m-0 text-muted">© 2024 My Bootstrap Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- Explanation
+Sample Blog Post Content: Added detailed content for an individual blog post on "The Future of AI: Innovations and Trends."
+Consistent Sidebar: Included the same sidebar widgets as the main page for consistency.
+Next Steps
+Responsive Design: Ensure the website is fully responsive on all devices.
+Interactive Elements: Add interactive elements like forms and modals.
+Deployment: Prepare the website for deployment. -->

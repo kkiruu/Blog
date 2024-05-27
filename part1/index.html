@@ -1,0 +1,77 @@
+
+
+
+<!-- 
+Step 2: Initial Project Setup and Navbar
+2.1. Project Setup
+Create a Project Folder: Create a folder for your project. Let's name it bootstrap_blog.
+Create Basic Files: Inside the bootstrap_blog folder, create the following files:
+index.html
+styles.css
+scripts.js
+2.2. Create the Basic HTML Structure with Navbar
+We'll start by setting up the HTML structure and including Bootstrap. Then, we'll add the navbar component.
+
+index.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Placeholder for Future Content -->
+    <div class="container mt-4">
+        <h1>Welcome to My Bootstrap Blog</h1>
+        <p>This is a placeholder text. More content will be added step by step.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- Explanation
+Basic HTML Structure: We've created a basic HTML structure including the head and body tags.
+Including Bootstrap: The Bootstrap CSS and JS files are included from a CDN.
+Navbar: A responsive navbar that includes links for Home, About, Blog, and Contact.
+Next Steps
+Navbar Customization: Customize the navbar with additional features like dropdowns or brand logos.
+Main Content Area: Start adding the main content structure with a blog post layout.
+Footer: Add a footer to the website.
+-->

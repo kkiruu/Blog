@@ -1,0 +1,124 @@
+<!-- 5.2. Create Individual Blog Post Layout
+We'll create a separate layout for individual blog posts.
+
+post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tech</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Blog Post Content Column -->
+            <div class="col-md-8">
+                <h1 class="mt-4">Blog Post Title</h1>
+                <p class="lead">by <a href="#">Author Name</a></p>
+                <hr>
+                <p>Posted on January 1, 2024 at 12:00 PM</p>
+                <hr>
+                <img class="img-fluid rounded" src="https://c1.wallpaperflare.com/preview/652/531/737/wood-aerial-background-beverage.jpg" alt="Blog Post Image">
+                <hr>
+                <p class="lead">Blog post content goes here...</p>
+                <p>More detailed content...</p>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Search Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-light mt-4">
+        <div class="container text-center">
+            <p class="m-0 text-muted">© 2024 My Bootstrap Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- Explanation
+Individual Blog Post Layout: Created a separate layout for individual blog posts, including a title, author, date, image, and post content.
+Blog Topic
+Let's choose a blog topic to start with. Here are a few ideas:
+
+Tech Innovations: Write about the latest trends and innovations in technology.
+Healthy Lifestyle: Share tips and advice on maintaining a healthy lifestyle.
+Travel Adventures: Document travel experiences and tips for fellow travelers.
+Coding Tutorials: Provide tutorials and guides on coding and software development.
+Book Reviews: Review and discuss your favorite books.
+Let's go with "Tech Innovations" for our blog topic. This will allow us to cover a wide range of interesting and relevant topics.
+
+Next Steps
+Add Sample Blog Posts: Create sample blog posts based on the chosen topic.
+Enhance Sidebar Widgets: Add more widgets like recent posts, tags, and archives.
+Responsive Design: Ensure the website is fully responsive on all devices. -->

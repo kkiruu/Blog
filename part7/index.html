@@ -1,0 +1,161 @@
+<!-- Step 7: Ensuring Responsive Design
+In this step, we'll ensure that the website is fully responsive on all devices. Bootstrap is designed to be responsive out-of-the-box, but we'll review and adjust our layout to make sure it looks good on various screen sizes.
+
+7.1. Review and Adjust Layout for Responsiveness
+We will ensure our layout components (navbar, content area, sidebar, and footer) work well on different screen sizes. Bootstrap's grid system and utility classes help with this.
+
+index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tech</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Blog Posts Column -->
+            <div class="col-lg-8">
+                <!-- Blog Post Card 1 -->
+                <div class="card mb-4">
+                    <img src="https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739748.jpg?size=626&ext=jpg&ga=GA1.1.1262777057.1708075036&semt=ais_user_b" class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Future of AI: Innovations and Trends</h5>
+                        <p class="card-text">Artificial Intelligence (AI) is rapidly advancing, bringing new innovations and trends...</p>
+                        <p class="card-text"><small class="text-muted">Posted on January 1, 2024 by John Doe</small></p>
+                        <a href="post.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post Card 2 -->
+                <div class="card mb-4">
+                    <img src="https://img.freepik.com/free-vector/blockchain-technology-security-template-vector-data-payment-securing-blog-banner_53876-112174.jpg" class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Blockchain Beyond Cryptocurrency</h5>
+                        <p class="card-text">Blockchain technology has numerous applications beyond cryptocurrency. In this article...</p>
+                        <p class="card-text"><small class="text-muted">Posted on February 15, 2024 by Jane Smith</small></p>
+                        <a href="post.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post Card 3 -->
+                <div class="card mb-4">
+                    <img src="https://images.moneycontrol.com/static-mcnews/2022/06/6-5G-evolution-around-the-world.jpg?impolicy=website&width=1600&height=900" class="card-img-top" alt="Blog Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Impact of 5G Technology</h5>
+                        <p class="card-text">5G technology is set to revolutionize the way we connect and communicate. This post explores...</p>
+                        <p class="card-text"><small class="text-muted">Posted on March 10, 2024 by Alex Johnson</small></p>
+                        <a href="post.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar Column -->
+            <div class="col-lg-4">
+                <!-- Search Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Tech</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Recent Posts Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="post.html">The Future of AI: Innovations and Trends</a></li>
+                            <li><a href="post.html">Blockchain Beyond Cryptocurrency</a></li>
+                            <li><a href="post.html">The Impact of 5G Technology</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tags Widget -->
+                <div class="card mb-4">
+                    <div class="card-header">Tags</div>
+                    <div class="card-body">
+                        <span class="badge badge-primary">Tech</span>
+                        <span class="badge badge-secondary">AI</span>
+                        <span class="badge badge-success">Blockchain</span>
+                        <span class="badge badge-danger">5G</span>
+                        <span class="badge badge-warning">Innovation</span>
+                        <span class="badge badge-info">Trends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-light mt-4">
+        <div class="container text-center">
+            <p class="m-0 text-muted">© 2024 My Bootstrap Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- Explanation
+Responsive Columns: Ensured that the columns for blog posts and sidebar use Bootstrap's responsive grid system (col-lg-*), which ensures that the layout adjusts properly on different screen sizes.
+
+Responsive Navbar: The navbar is already responsive due to Bootstrap's built-in classes.
+
+Footer: The footer is placed inside a container and uses Bootstrap's classes to ensure it looks good on all screen sizes. -->
